@@ -1,0 +1,93 @@
+:root{
+    --branco-titulo: #FFFFFF;
+    --branco-principal: #F6F6F6;
+    --cinza-princpal: #1A1A1A;
+    --cinza-fundo: #E6E6E6;
+    --verde-principal: #007F06;
+    --verde-botao: #63FF5D;
+    --fonte-principal: 'Poppins';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--branco-principal);
+    color: var(--cinza-princpal);
+    font-family: var(--fonte-principal);
+}
+
+/*Cabeçalho=======================================================================================================*/
+
+header{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background-color: #007F06;
+    height: 109px;
+}
+
+.logo{
+    display: inline;
+    margin-left: 85px;
+    margin-top: 30px;
+}
+
+.pesquisa{
+    display: inline-block;
+    width: 401px;
+    height: 32px;
+    margin: auto;
+    padding-left: auto;
+    padding-right: auto;
+    border-radius: 20px;
+}
+
+#pesquisa::placeholder{
+    padding-left: 9px;
+    font-family: var(--fonte-principal);
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+.entrar{
+    display: inline-flex;
+    color: var(--branco-principal);
+    font-size: 38px;
+    font-weight: bold;
+}
+
+/*Cabeçalho=======================================================================================================*/
+
+/*Notícias========================================================================================================*/
+main{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    margin-top: 50px;
+}
+
+.noticia{
+    display: grid;
+    grid-column: 2;
+    grid-template-areas: 
+        "img title title title";
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.img_noticia{
+    grid-area: img;
+    height: 450px;
+    width: 600px;
+}
+
+.title_noticia{
+    grid-area: title;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+/*Notícias========================================================================================================*/
